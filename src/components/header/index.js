@@ -13,9 +13,9 @@ export const header = () => {
   const elementHtml = document.createElement('header')
   elementHtml.innerHTML = `<div class="header-container">
     <div class="logo">
-      <img src="${logo}">
+      <img src="${logo}" alt="Logo da sapo em formato de origami na cor verde com o texto sapo escrito em branco">
     </div>
-    <button class="icon-nav" data-js="navMobile"></button>
+    <button class="icon-nav" data-js="navMobile" aria-label="abrir e fecha menu mobile"></button>
     <nav class="mobile">
       <ul>
         <li><a href="/">Lorem</a></li>
