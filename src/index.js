@@ -3,6 +3,8 @@ import {
   toggleNavMobile,
   selectColor,
   handleChangeToColor,
+  brand,
+  toggleText,
 } from '@/components/'
 
 // // Test import of a JavaScript module
@@ -33,7 +35,9 @@ import '@/styles/index.scss'
 const app = document.querySelector('#root')
 const headerTemplate = header();
 const selectColorTemplate = selectColor();
-app.append(headerTemplate, selectColorTemplate)
+const brandTemplate = brand();
+app.append(headerTemplate, selectColorTemplate, brandTemplate)
 
 toggleNavMobile();
 handleChangeToColor();
+toggleText();

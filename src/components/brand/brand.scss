@@ -1,0 +1,441 @@
+@import '@/styles/variables';
+
+.brand {
+
+  &__container {
+    padding-top: 320px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+  }
+
+  &__wrapper {
+    max-width: 1610px;
+    padding: 0 0 490px 21px;
+    position: relative;
+    width: 100%;
+
+    @media screen and (min-width: 375px) {
+      padding: 0 0 360px 21px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 0 0 90px 21px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: 0 auto;
+      padding: 0 90px 390px;
+    }
+  }
+
+  &__obj1 {
+    position: absolute;
+    top: -49px;
+    right: 60px;
+
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      top: -99px;
+      right: initial;
+      left: 90px;
+    }
+  }
+  &__obj2--mobile {
+    width: 100%;
+    margin-top: 53px;
+    height: 317px;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+
+    svg {
+      position: absolute;
+      top: 0;
+      right: -157px;
+    }
+  }
+  &__obj2--desktop {
+    position: absolute;
+    top: 190px;
+    left: -300px;
+    z-index: 1;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+  &__obj3 {
+    width: 100%;
+    margin-top: 100px;
+    margin-right: 15px;
+    height: 62px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 5;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 278px;
+      margin-right: 170px;
+    }
+  }
+  &__obj4 {
+    position: absolute;
+    top: 71px;
+    right: 230px;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+  &__titles {
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: flex-end;
+    height: 104px;
+    border-left: 6px solid $colorGray;
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 33px;
+    color: $colorGray;
+    padding-left: 16px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 60px;
+    color: $colorBlack;
+    margin-top: 21px;
+    margin-bottom: 57px;
+    text-transform: uppercase;
+    padding-left: 21px;
+
+    @media screen and (min-width: 1200px) {
+      padding-left: 0px;
+      width: 100%;
+      text-align: center;
+      font-size: 90px;
+      margin-top: 23px;
+      margin-bottom: 51px;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: start;
+    }
+
+    &__image {
+      width: 100%;
+      height: 288px;
+      display: flex;
+      justify-content: flex-end;
+      background-color: $colorWhite;
+
+      @media screen and (min-width: 1200px) {
+        width: 624px;
+        height: 606px;
+        justify-content: start;
+        z-index: 2;
+      }
+    }
+    &__texts {
+      position: absolute;
+      top: 31px;
+      left: 16px;
+      width: 60%;
+      z-index: 3;
+      height: 767px;
+      overflow: hidden;
+
+      &.active {
+        overflow: visible;
+        height: auto;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 781px;
+        top: 92px;
+        left: 510px;
+        height: 630px;
+        overflow: hidden;
+
+        &.active {
+          height: auto;
+        }
+      }
+
+      &__title {
+        font-weight: 400;
+        font-size: 32px;
+        color: $colorGray;
+        line-height: 38px;
+
+        @media screen and (min-width: 1200px) {
+          font-size: 48px;
+          line-height: 57px;
+          font-weight: 300;
+        }
+      }
+      &__text {
+        font-weight: 400;
+        font-size: 24px;
+        color: $colorGray;
+        margin-top: 38px;
+        line-height: 38px;
+
+        @media screen and (min-width: 1200px) {
+          font-size: 48px;
+          line-height: 57px;
+          margin-top: 58px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  &__sapo-mobile {
+    width: 73px;
+    margin-top: 19px;
+    margin-right: 32px;
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  &__sapo-desktop {
+    width: 256px;
+    margin-left: 122px;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: inline-block;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  &__links {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      margin-top: 180px;
+    }
+
+    &__a {
+      padding: 10px 15px;
+      font-weight: 400;
+      font-size: 24px;
+      color: $colorWhite;
+      background-color: $colorGreenDark;
+      text-decoration: none;
+      margin-bottom: 18px;
+      width: 177px;
+      position: relative;
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -24px;
+        width: 0;
+        height: 0;
+        border-top: 48px solid $colorGreenDark;
+        border-left: 24px solid transparent;
+        border-right: 24px solid transparent;
+      }
+    }
+    &__a--diffent {
+      padding: 10px 15px;
+      font-weight: 400;
+      font-size: 24px;
+      color: $colorWhite;
+      background-color: $colorGreenLight;
+      text-decoration: none;
+      margin-bottom: 18px;
+      width: 244px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -24px;
+        width: 0;
+        height: 0;
+        border-bottom: 48px solid $colorGreenLight;
+        border-left: 24px solid transparent;
+        border-right: 24px solid transparent;
+      }
+
+      @media screen and (min-width: 1200px) {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -24px;
+          width: 0;
+          height: 0;
+          border-bottom: 48px solid $colorGreenLight;
+          border-left: 24px solid transparent;
+          border-right: 24px solid transparent;
+        }
+        &::after {
+          border-bottom: initial;
+          border-top: 48px solid $colorGreenLight;
+        }
+      }
+    }
+  }
+  &__barra {
+    bottom: -3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }   
+  }
+  &__toggle {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+  }
+}
+
+body {
+  &.blue {
+    .brand__obj1,
+    .brand__obj2--mobile,
+    .brand__obj2--desktop,
+    .brand__obj4 {
+      
+      svg,
+      path,
+      circle,
+      rect {
+        stroke: $colorBlue;
+      }
+    }
+    .brand__obj3 {
+      svg,
+      path,
+      circle,
+      rect {
+        fill: $colorBlue;
+      }
+    }
+    .brand {
+      &__content__texts {
+        &__title,
+        &__text {
+          &::selection {
+            color: $colorWhite;
+            background-color: $colorBlue;            
+          }
+        }
+      }
+    }
+  }
+  &.green {
+    .brand__obj1,
+    .brand__obj2--mobile,
+    .brand__obj2--desktop,
+    .brand__obj4 {
+      
+      svg,
+      path,
+      circle,
+      rect {
+        stroke: $colorGreen;
+      }
+    }
+
+    .brand__obj3 {
+      svg,
+      path,
+      circle,
+      rect {
+        fill: $colorGreen;
+      }
+    }
+    .brand {
+      &__content__texts {
+        &__title,
+        &__text {
+          &::selection {
+            color: $colorWhite;
+            background-color: $colorGreen;            
+          }
+        }
+      }
+    }
+  }
+  &.orange {
+    .brand__obj1,
+    .brand__obj2--mobile,
+    .brand__obj2--desktop,
+    .brand__obj4 {
+      
+      svg,
+      path,
+      circle,
+      rect {
+        stroke: $colorOrange;
+      }
+    }
+    .brand__obj3 {
+      svg,
+      path,
+      circle,
+      rect {
+        fill: $colorOrange;
+      }
+    }
+    .brand {
+      &__content__texts {
+        &__title,
+        &__text {
+          &::selection {
+            color: $colorWhite;
+            background-color: $colorOrange;            
+          }
+        }
+      }
+    }
+  }
+}
