@@ -1,0 +1,170 @@
+@import '@/styles/variables';
+
+header {
+  background-color: $colorGray;
+  display: flex;
+  justify-content: center;
+  padding: 60px 33px 0;
+  
+  .header-container {
+    align-items: center;
+    display: flex;
+    height: 33px;
+    justify-content: space-between;
+    max-width: 1610px;
+    position: relative;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      height: 70px;
+    }
+  }
+
+  .logo {
+    width: 137px;
+
+    @media screen and (min-width: 1200px) {
+      width: 291px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  .icon-nav {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 30px;
+    position: relative;
+    transition: all .25s ease-in-out;
+    width: 45px;
+
+    &:before,
+    &:after {
+      content: "";
+      background-color: $colorBlack;
+      height: 6px;
+      left: 0;
+      position: absolute;
+      transition: all .25s ease-in-out;
+      width: 45px;
+    }
+    &::before {
+      box-shadow: 0 12px 0 0 $colorBlack;
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+  nav {
+    &.desktop {
+      display: none;
+
+      ul {
+        align-items: center;
+        display: flex;
+        list-style: none;
+      }
+      li {
+        margin-right: 48px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      a {
+        color: $colorBlack;
+        font-size: 26px;
+        padding: 5px 15px;
+        text-decoration: none;
+        transition: all .25s ease-in-out;
+
+        &:hover {
+          background-color: $colorBlack;
+          color: $colorWhite;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        display: block;
+      }
+    }
+    &.mobile {
+      background-color: $colorBlack;
+      height: 100%;
+      padding: 64px 52px 0;
+      position: fixed;
+      right: -261px;
+      top: 0;
+      transition: all .25s ease-in-out;
+      width: 261px;
+
+      @media screen and (min-width: 360px) {
+        right: -281px;
+        width: 281px;
+      }
+      
+      ul {
+        list-style: none;
+      }
+      li {
+        padding: 11px 0;
+      }
+      a {
+        color: $colorWhite;
+        font-size: 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      @media screen and (min-width: 1200px) {
+        display: none;
+      }
+    }
+    
+  }
+  &.active {
+    nav {
+      &.mobile {
+        transform: translateX(-261px);
+
+        @media screen and (min-width: 360px) {
+          transform: translateX(-281px);
+        }
+      }      
+    }
+    .logo {
+      img {
+        @media screen and (max-width: 520px) {
+          display: none;
+        }        
+      }      
+    }
+    .icon-nav {
+      bottom: 0;
+      position: absolute;
+      right: 0;
+      transform: translateX(-234px);
+
+      @media screen and (min-width: 360px) {
+        transform: translateX(-269px);
+      }
+
+        &::before {
+          box-shadow: initial;
+          top: 7px;
+          transform: rotate(-45deg);
+        }
+        &::after {
+          bottom: 16px;
+          transform: rotate(45deg);
+        }
+    }
+  }
+}
