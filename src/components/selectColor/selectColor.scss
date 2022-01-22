@@ -1,0 +1,287 @@
+@import '@/styles/variables';
+
+.containerSelectColor {
+  background-color: $colorGray;
+  display: flex;
+  justify-content: center;
+  margin-top: -1px;
+  position: relative;
+  
+  .wrapper {
+    height: 600px;
+    max-width: 1610px;
+    padding: 60px 33px 0;
+    position: relative;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      height: 1106px;
+    }
+  }
+  .objects-desktop {
+    display: none;
+    height: 529px;
+    position: absolute;
+    right: 89px;
+    top: 121px;
+    width: 802px;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+
+    .obj1,
+    .obj2,
+    .obj3,
+    .obj4,
+    .obj5,
+    .obj6 {
+      position: absolute;
+    }
+
+    .obj1 {
+      left: 51px;
+      top: 2px;
+    }
+    .obj2 {
+      left: 0;
+      top: 336px;
+    }
+    .obj3 {
+      bottom: 175px;
+      left: 235px;
+    }
+    .obj4 {
+      bottom: 18px;
+      left: 328px;
+    }
+    .obj5 {
+      bottom: 279px;
+      right: 241px;
+    }
+    .obj6 {
+      bottom: 152px;
+      right: 0;
+    }
+  }
+  .objects-mobile {
+    height: 339px;
+    margin: 0 auto;
+    position: relative;
+    width: 242px;
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+
+    .obj1,
+    .obj2,
+    .obj3,
+    .obj4,
+    .obj5 {
+      position: absolute;
+    }
+
+    .obj1 {
+      left: 94px;
+      top: -6px;
+    }
+    .obj2 {
+      left: 52px;
+      top: 97px;
+    }
+    .obj3 {
+      bottom: 97px;
+      left: 85px;
+    }
+    .obj4 {
+      bottom: 18px;
+      left: -3px;
+    }
+    .obj5 {
+      bottom: -4px;
+      right: 18px;
+    }
+  }
+  .sapo {
+    bottom: -25px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    
+    .sapo__wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 1610px;
+      width: 100%;
+
+      @media screen and (min-width: 1200px) {
+        justify-content: end;
+      }
+    }
+
+     img {
+       max-width: 306px;
+       width: 100%;
+
+       @media screen and (min-width: 1200px) {
+         max-width: 834px;
+       }
+     }
+  }
+  .buttons {
+    align-items: center;
+    bottom: -181px;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+
+    @media screen and (min-width: 1200px) {
+      bottom: initial;
+      top: 457px;
+      width: 692px;
+      z-index: 6;
+    }
+
+      button {
+        border: 0;
+        cursor: pointer;
+        height: 66px;
+        margin-right: 26px;
+        position: relative;
+        transition: all .25s ease-in-out;
+        width: 66px;
+
+        @media screen and (min-width: 1200px) {
+          height: 117px;
+          margin-right: 48px;
+          width: 117px;
+        }
+        
+        &.button-green,
+        &.button-blue,
+        &.button-orange {
+          &::after {
+            content: "";
+            display: none;
+            height: 108px;
+            left: -11px;
+            position: absolute;
+            top: -11px;
+            width: 108px;
+
+            @media screen and (min-width: 1200px) {
+              height: 192px;
+              left: -18px;
+              top: -18px;
+              width: 192px;
+            }
+          }
+        }
+
+        &.button-green {
+          background-color: $colorGreen;
+          
+          &::after {
+            content: "";
+            border: 3px solid $colorGreen;
+          }
+        }
+        &.button-blue {
+          background-color: $colorBlue;
+
+          &::after {
+            border: 3px solid $colorBlue;
+          }
+        }
+        &.button-orange {
+          background-color: $colorOrange;
+          margin-right: 0;
+
+          &::after {
+            content: "";
+            border: 3px solid $colorOrange;
+          }
+        }
+
+        &.active {
+          height: 92px;
+          width: 92px;
+
+          @media screen and (min-width: 1200px) {
+            height: 163px;
+            width: 163px;
+          }
+
+          &::after {
+            display: block;
+          }
+        }
+      }
+  }
+  .barra {
+    bottom: -3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+body {
+  &.blue {
+    .obj1,
+    .obj2,
+    .obj3,
+    .obj4,
+    .obj5,
+    .obj6 {
+      
+      svg,
+      path,
+      circle,
+      rect {
+        stroke: $colorBlue;
+      }
+    }
+  }
+  &.green {
+    .obj1,
+    .obj2,
+    .obj3,
+    .obj4,
+    .obj5,
+    .obj6 {
+      
+      svg,
+      path,
+      circle,
+      rect {
+        stroke: $colorGreen;
+      }
+    }
+  }
+  &.orange {
+    .obj1,
+    .obj2,
+    .obj3,
+    .obj4,
+    .obj5,
+    .obj6 {
+      
+      svg,
+      path,
+      circle,
+      rect {
+        stroke: $colorOrange;
+      }
+    }
+  }
+}

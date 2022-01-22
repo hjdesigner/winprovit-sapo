@@ -1,4 +1,9 @@
-import { header, toggleNavMobile } from '@/components/'
+import {
+  header,
+  toggleNavMobile,
+  selectColor,
+  handleChangeToColor,
+} from '@/components/'
 
 // // Test import of a JavaScript module
 // import { example } from '@/js/example'
@@ -27,6 +32,8 @@ import { header, toggleNavMobile } from '@/components/'
 import '@/styles/index.scss'
 const app = document.querySelector('#root')
 const headerTemplate = header();
-app.append(headerTemplate)
+const selectColorTemplate = selectColor();
+app.append(headerTemplate, selectColorTemplate)
 
 toggleNavMobile();
+handleChangeToColor();
