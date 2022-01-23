@@ -1,5 +1,8 @@
 # 📦 Winprovit  Sapo
 
+
+Observação: Algumas imagens e objetos não esta como exportável no layout então precisei recriar eles e não esta 100% igual ao projeto.
+
 ## Confira o projeto rodando no servidor
 
 [Projeto](https://henriquemelanda.com.br/winprovit-sapo/index.html)
