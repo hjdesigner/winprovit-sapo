@@ -6,16 +6,20 @@
   justify-content: center;
   margin-top: -1px;
   position: relative;
+  background-image: url('../../images/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   
   .wrapper {
-    height: 600px;
+    height: 730px;
     max-width: 1610px;
     padding: 60px 33px 0;
     position: relative;
     width: 100%;
 
     @media screen and (min-width: 1200px) {
-      height: 1106px;
+      height: 1236px;
     }
   }
   .objects-desktop {
@@ -23,7 +27,7 @@
     height: 529px;
     position: absolute;
     right: 89px;
-    top: 121px;
+    top: 251px;
     width: 802px;
 
     @media screen and (min-width: 1200px) {
@@ -66,7 +70,7 @@
   }
   .objects-mobile {
     height: 339px;
-    margin: 0 auto;
+    margin: 130px auto 0;
     position: relative;
     width: 242px;
     @media screen and (min-width: 1200px) {
@@ -142,7 +146,7 @@
 
     @media screen and (min-width: 1200px) {
       bottom: initial;
-      top: 457px;
+      top: 587px;
       width: 692px;
       z-index: 6;
     }
