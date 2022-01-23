@@ -3,10 +3,10 @@
 .brand {
 
   &__container {
-    padding-top: 320px;
     display: inline-block;
-    width: 100%;
+    padding-top: 320px;
     position: relative;
+    width: 100%;
   }
 
   &__wrapper {
@@ -31,22 +31,22 @@
 
   &__obj1 {
     position: absolute;
-    top: -49px;
     right: 60px;
+    top: -49px;
 
     @media screen and (min-width: 1200px) {
-      position: absolute;
-      top: -99px;
-      right: initial;
       left: 90px;
+      position: absolute;
+      right: initial;
+      top: -99px;
     }
   }
   &__obj2--mobile {
-    width: 100%;
-    margin-top: 53px;
     height: 317px;
-    position: relative;
+    margin-top: 53px;
     overflow: hidden;
+    position: relative;
+    width: 100%;
 
     @media screen and (min-width: 1200px) {
       display: none;
@@ -54,28 +54,28 @@
 
     svg {
       position: absolute;
-      top: 0;
       right: -157px;
+      top: 0;
     }
   }
   &__obj2--desktop {
+    display: none;
+    left: -300px;
     position: absolute;
     top: 190px;
-    left: -300px;
     z-index: 1;
-    display: none;
 
     @media screen and (min-width: 1200px) {
       display: block;
     }
   }
   &__obj3 {
-    width: 100%;
-    margin-top: 100px;
-    margin-right: 15px;
-    height: 62px;
     display: flex;
+    height: 62px;
     justify-content: flex-end;
+    margin-right: 15px;
+    margin-top: 100px;
+    width: 100%;
     z-index: 5;
 
     @media screen and (min-width: 1200px) {
@@ -84,10 +84,10 @@
     }
   }
   &__obj4 {
-    position: absolute;
-    top: 71px;
-    right: 230px;
     display: none;
+    position: absolute;
+    right: 230px;
+    top: 71px;
 
     @media screen and (min-width: 1200px) {
       display: block;
@@ -96,21 +96,21 @@
   &__titles {
 
     @media screen and (min-width: 1200px) {
-      display: flex;
       align-items: center;
+      display: flex;
       flex-direction: column;
     }
   }
 
   &__title {
-    display: flex;
     align-items: flex-end;
-    height: 104px;
     border-left: 6px solid $colorGray;
-    margin-left: 40px;
-    font-weight: 500;
-    font-size: 33px;
     color: $colorGray;
+    display: flex;
+    font-size: 33px;
+    font-weight: 500;
+    height: 104px;
+    margin-left: 40px;
     padding-left: 16px;
 
     @media screen and (min-width: 1200px) {
@@ -119,67 +119,67 @@
   }
 
   &__subtitle {
-    font-weight: 700;
-    font-size: 60px;
     color: $colorBlack;
-    margin-top: 21px;
+    font-size: 60px;
+    font-weight: 700;
     margin-bottom: 57px;
-    text-transform: uppercase;
+    margin-top: 21px;
     padding-left: 21px;
+    text-transform: uppercase;
 
     @media screen and (min-width: 1200px) {
-      padding-left: 0px;
-      width: 100%;
-      text-align: center;
       font-size: 90px;
-      margin-top: 23px;
       margin-bottom: 51px;
+      margin-top: 23px;
+      padding-left: 0px;
+      text-align: center;
+      width: 100%;
     }
   }
   &__content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     position: relative;
-    flex-wrap: wrap;
 
     @media screen and (min-width: 1200px) {
       justify-content: start;
     }
 
     &__image {
-      width: 100%;
-      height: 288px;
-      display: flex;
-      justify-content: flex-end;
       background-color: $colorWhite;
+      display: flex;
+      height: 288px;
+      justify-content: flex-end;
+      width: 100%;
 
       @media screen and (min-width: 1200px) {
-        width: 624px;
         height: 606px;
         justify-content: start;
+        width: 624px;
         z-index: 2;
       }
     }
     &__texts {
+      height: 767px;
+      left: 16px;
+      overflow: hidden;
       position: absolute;
       top: 31px;
-      left: 16px;
       width: 60%;
       z-index: 3;
-      height: 767px;
-      overflow: hidden;
 
       &.active {
-        overflow: visible;
         height: auto;
+        overflow: visible;
       }
 
       @media screen and (min-width: 1200px) {
-        width: 781px;
-        top: 92px;
-        left: 510px;
         height: 630px;
+        left: 510px;
         overflow: hidden;
+        top: 92px;
+        width: 781px;
 
         &.active {
           height: auto;
@@ -187,37 +187,37 @@
       }
 
       &__title {
-        font-weight: 400;
-        font-size: 32px;
         color: $colorGray;
+        font-size: 32px;
+        font-weight: 400;
         line-height: 38px;
 
         @media screen and (min-width: 1200px) {
           font-size: 48px;
-          line-height: 57px;
           font-weight: 300;
+          line-height: 57px;
         }
       }
       &__text {
-        font-weight: 400;
-        font-size: 24px;
         color: $colorGray;
-        margin-top: 38px;
+        font-size: 24px;
+        font-weight: 400;
         line-height: 38px;
+        margin-top: 38px;
 
         @media screen and (min-width: 1200px) {
           font-size: 48px;
+          font-weight: 300;
           line-height: 57px;
           margin-top: 58px;
-          font-weight: 300;
         }
       }
     }
   }
   &__sapo-mobile {
-    width: 73px;
-    margin-top: 19px;
     margin-right: 32px;
+    margin-top: 19px;
+    width: 73px;
 
     @media screen and (min-width: 1200px) {
       display: none;
@@ -228,9 +228,9 @@
     }
   }
   &__sapo-desktop {
-    width: 256px;
-    margin-left: 122px;
     display: none;
+    margin-left: 122px;
+    width: 256px;
 
     @media screen and (min-width: 1200px) {
       display: inline-block;
@@ -241,10 +241,10 @@
     }
   }
   &__links {
-    width: 100%;
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
 
     @media screen and (min-width: 1200px) {
       flex-direction: row;
@@ -252,66 +252,66 @@
     }
 
     &__a {
-      padding: 10px 15px;
-      font-weight: 400;
-      font-size: 24px;
-      color: $colorWhite;
       background-color: $colorGreenDark;
-      text-decoration: none;
+      color: $colorWhite;
+      font-size: 24px;
+      font-weight: 400;
       margin-bottom: 18px;
-      width: 177px;
+      padding: 10px 15px;
       position: relative;
+      text-decoration: none;
+      width: 177px;
 
       @media screen and (min-width: 1200px) {
         margin-right: 50px;
       }
 
       &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -24px;
-        width: 0;
-        height: 0;
-        border-top: 48px solid $colorGreenDark;
         border-left: 24px solid transparent;
         border-right: 24px solid transparent;
+        border-top: 48px solid $colorGreenDark;
+        content: "";
+        height: 0;
+        position: absolute;
+        right: -24px;
+        top: 0;
+        width: 0;
       }
     }
     &__a--diffent {
-      padding: 10px 15px;
-      font-weight: 400;
-      font-size: 24px;
-      color: $colorWhite;
       background-color: $colorGreenLight;
-      text-decoration: none;
+      color: $colorWhite;
+      font-size: 24px;
+      font-weight: 400;
       margin-bottom: 18px;
-      width: 244px;
+      padding: 10px 15px;
       position: relative;
+      text-decoration: none;
+      width: 244px;
 
       &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -24px;
-        width: 0;
-        height: 0;
         border-bottom: 48px solid $colorGreenLight;
         border-left: 24px solid transparent;
         border-right: 24px solid transparent;
+        content: "";
+        height: 0;
+        position: absolute;
+        right: -24px;
+        top: 0;
+        width: 0;
       }
 
       @media screen and (min-width: 1200px) {
         &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: -24px;
-          width: 0;
-          height: 0;
           border-bottom: 48px solid $colorGreenLight;
           border-left: 24px solid transparent;
           border-right: 24px solid transparent;
+          content: "";
+          height: 0;
+          left: -24px;
+          position: absolute;
+          top: 0;
+          width: 0;
         }
         &::after {
           border-bottom: initial;
@@ -331,9 +331,9 @@
     }   
   }
   &__toggle {
-    cursor: pointer;
-    border: 0;
     background-color: transparent;
+    border: 0;
+    cursor: pointer;
   }
 }
 
@@ -364,8 +364,8 @@ body {
         &__title,
         &__text {
           &::selection {
-            color: $colorWhite;
             background-color: $colorBlue;            
+            color: $colorWhite;
           }
         }
       }
@@ -398,8 +398,8 @@ body {
         &__title,
         &__text {
           &::selection {
-            color: $colorWhite;
             background-color: $colorGreen;            
+            color: $colorWhite;
           }
         }
       }
@@ -431,8 +431,8 @@ body {
         &__title,
         &__text {
           &::selection {
-            color: $colorWhite;
             background-color: $colorOrange;            
+            color: $colorWhite;
           }
         }
       }

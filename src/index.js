@@ -5,6 +5,8 @@ import {
   handleChangeToColor,
   brand,
   toggleText,
+  heels,
+  handleHells,
 } from '@/components/'
 
 // // Test import of a JavaScript module
@@ -36,8 +38,10 @@ const app = document.querySelector('#root')
 const headerTemplate = header();
 const selectColorTemplate = selectColor();
 const brandTemplate = brand();
-app.append(headerTemplate, selectColorTemplate, brandTemplate)
+const heelsTemplate = heels();
+app.append(headerTemplate, selectColorTemplate, brandTemplate, heelsTemplate)
 
 toggleNavMobile();
 handleChangeToColor();
 toggleText();
+handleHells();

@@ -33,10 +33,10 @@ export const brand = () => {
     <div class="brand__content">
       <div class="brand__content__image">
         <div class="brand__sapo-mobile">
-          <img src="${marcaSapoMobile}" />
+          <img src="${marcaSapoMobile}" alt="Sapo com o braço cruzado e com a perna enconstada na parede no lado esquedo"/>
         </div>
         <div class="brand__sapo-desktop">
-          <img src="${marcaSapoDesktop}" />
+          <img src="${marcaSapoDesktop}" alt="Sapo com o braço cruzado e com a perna enconstada na parede no lado direito" />
         </div>
       </div>
       <div class="brand__obj2--mobile">

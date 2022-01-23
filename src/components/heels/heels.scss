@@ -1,0 +1,230 @@
+@import '@/styles/variables';
+
+.heels {
+
+  &__container {
+    background-color: $colorWhite;
+    display: inline-block;
+    padding: 90px 0 120px;
+    position: relative;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      padding: 90px 0 350px;
+    }
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1610px;
+    position: relative;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__barra {
+    bottom: -3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }   
+  }
+  &__titles {
+
+    @media screen and (min-width: 1200px) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    align-items: flex-end;
+    border-left: 6px solid $colorGray;
+    color: $colorGray;
+    display: flex;
+    font-size: 33px;
+    font-weight: 500;
+    height: 104px;
+    margin-left: 81px;
+    padding-left: 16px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0px;
+    }
+  }
+
+  &__subtitle {
+    color: $colorBlack;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 57px;
+    margin-top: 21px;
+    padding-left: 42px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 90px;
+      margin-bottom: 162px;
+      margin-top: 23px;
+      padding-left: 0px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  &__forms {
+    background-color: $colorGrayMedium;
+    padding: 80px 40px;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      padding: 102px 142px 80px 58px;
+      width: 511px;
+    }
+  }
+  &__fields {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  &__input {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 6px solid $colorBlack;    
+    color: $colorBlack;
+    font-size: 40px;
+    font-weight: 700;
+    height: 57px;
+    margin-bottom: 29px;
+    width: 80%;
+  }
+  &__actions {
+    margin-top: 49px;
+
+  }
+  &__action__button {
+    background-color: $colorGreenLight;
+    border: 0;
+    color: $colorWhite;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    padding: 10px 15px;
+    position: relative;
+    text-decoration: none;
+    width: 177px;
+    
+    &::after {
+      border-left: 24px solid transparent;
+      border-right: 24px solid transparent;
+      border-top: 48px solid $colorGreenLight;
+      content: "";
+      height: 0;
+      position: absolute;
+      right: -24px;
+      top: 0;
+      width: 0;
+    }
+  }
+  &__objects {
+    height: 602px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 163px;
+      width: 500px;
+    }
+  }
+  &__obj1 {
+    left: -60px;
+    position: absolute;
+    top: 40px;
+
+    @media screen and (min-width: 1200px) {
+      left: initial;
+      right: 0;
+    }
+  }
+  &__obj2 {
+    position: absolute;
+    right: 40px;
+    top: 220px;
+    transition: all .25s ease-in-out;
+    width: 166px;
+
+    @media screen and (min-width: 1200px) {
+      &.success {
+        transform: translateX(332px);
+        img {
+          filter: grayscale(0%);
+        }
+      }
+    }    
+
+    img {
+      filter: grayscale(100%);
+      width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      left: 0;
+      right: initial;
+    }
+  }
+  &__erro {
+    color: $colorRed;
+    font-size: 15px;
+  }
+  &__text {
+    display: none;
+    &.active {
+      display: inline-block;
+    }
+  }
+}
+
+body {
+  &.blue {
+    .heels__obj1 {
+      
+      svg,
+      path,
+      circle,
+      rect {
+        fill: $colorBlue;
+      }
+    }
+  }
+  &.green {
+    .heels__obj1 {
+      
+      svg,
+      path,
+      circle,
+      rect {
+        fill: $colorGreen;
+      }
+    }
+  }
+  &.orange {
+    .heels__obj1 {
+      
+      svg,
+      path,
+      circle,
+      rect {
+        fill: $colorOrange;
+      }
+    }
+  }
+}
