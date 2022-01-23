@@ -29,6 +29,15 @@ Você pode ver o servidor de desenvolvimento em `localhost:8080`.
 npm run build
 ```
 
+### Teste e2e
+
+```bash
+npm start
+```
+
+```bash
+npm run e2e
+```
 
 ## Recursos
 
@@ -77,3 +86,7 @@ npm run build
 - [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier)
   - - [`prettier`](https://github.com/prettier/prettier)
 - [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack)
+
+### Teste
+
+- [`cypress`](https://www.cypress.io/)
